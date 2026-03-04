@@ -30,7 +30,7 @@ def load_document(doc_file = "docs"):
     if len(documents) == 0:
         print("document is empty")
 
-    for i , doc in enumerate(documents[:2]):
+    for i , doc in enumerate(documents):
         print(f"document : {i+1}")
         print(f"metadata : {doc.metadata['source']}")
         print(f"content length : {len(doc.page_content)} characters")
