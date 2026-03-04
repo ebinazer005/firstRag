@@ -41,7 +41,7 @@ def load_document(doc_file = "docs"):
  
     
 def split_document(documents):     
-    print(f"chunking the documents {documents}")
+    print("chunking the documents")
 
     test_spliter = CharacterTextSplitter(
         chunk_size=1000,
