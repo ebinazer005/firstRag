@@ -32,15 +32,10 @@ def load_document(doc_file = "docs"):
     return documents
  
     
-<<<<<<< HEAD
 def split_document(documents):  
   
     print("chunking the documents")
      
-=======
-def split_document(documents):     
-    print("chunking the documents")
->>>>>>> 8b00a1272d92f89fe03ff0575de4331b9b00dbdd
 
     test_spliter = CharacterTextSplitter(
         chunk_size=1000,
@@ -76,7 +71,7 @@ def create_vector_store(chunks,persist_directory = "db/chroma_db"):
 
     )
 
-    print ("--- Finished creating vector store -----")
+    print ("--- Finished creating vector store -----") 
 
     print(f"vector store created and save to {persist_directory}")
     return vectorstores
