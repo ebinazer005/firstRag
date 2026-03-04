@@ -74,6 +74,7 @@ def create_vector_store(chunks,persist_directory = "db/chroma_db"):
     print ("--- Finished creating vector store -----") 
 
     print(f"vector store created and save to {persist_directory}")
+    # vector
     return vectorstores
 
 def main():
